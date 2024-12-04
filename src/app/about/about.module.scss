@@ -1,0 +1,123 @@
+.about-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center;
+    padding: 60px 20px;
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+    min-height: calc(100vh - 80px); /* Garante que a altura do header seja descontada */
+    font-family: Arial, sans-serif;
+
+    .bottom-right-image {
+        position: absolute; /* Posicionamento relativo ao contêiner pai */
+        bottom: 0px; /* Distância da parte inferior */
+        right: 20px; /* Distância da parte direita */
+        width: 270px; /* Tamanho da imagem (ajuste conforme necessário) */
+        height: auto; /* Mantém a proporção da imagem */
+        z-index: 10; /* Certifica-se de que a imagem fique sobre outros elementos */
+        opacity: 0.8; /* Torna a imagem levemente transparente (opcional) */
+        transition: opacity 0.3s ease; /* Animação de hover */
+    }
+    
+    .bottom-right-image:hover {
+        opacity: 1; /* Deixa a imagem completamente visível ao passar o mouse */
+    }
+
+.about-header {
+    margin-bottom: 30px;
+
+    .about-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: var(--primary-color);
+
+        &::after {
+            content: '';
+            display: block;
+            width: 0px;
+            height: 4px;
+            margin: 10px auto 0;
+            background-color: var(--primary-color);
+        }
+    }
+}
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: var(--secondary-color);
+
+    .justified-text {
+        text-align: justify; /* Justifica o texto */
+        margin-bottom: 30px; /* Espaçamento abaixo do texto */
+    }
+
+    p {
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .decorative-line {
+        width: 20px;
+        height: 4px;
+        background-color: var(--primary-color);
+        border-radius: 2px;
+        margin: 20px auto;
+    } 
+
+    .highlighted-text {
+        font-size: 1.1rem; /* Ajuste para o tamanho desejado */
+        font-weight: bold; /* Opcional: destaque */
+        color: #ffffff; /* Opcional: ajuste da cor */
+        text-align: center; /* Centraliza o texto */
+        margin-top: 30px; /* Adiciona espaço acima */
+    }
+
+
+    
+    .differentials-title {
+        font-size: 1.8rem; /* Ajuste para o tamanho desejado */
+        font-weight: bold; /* Garante que fique destacado */
+        color: var(--primary-color); /* Mantém a cor principal */
+        text-align: center; /* Opcional, se quiser alinhado à esquerda */
+    }
+
+    ul {
+        display: flex; /* Define um layout flexível */
+        justify-content: center; /* Centraliza os itens no contêiner */
+        gap: 20px; /* Adiciona espaço entre os itens */
+        padding: 0; /* Remove o preenchimento padrão da lista */
+        list-style: none; /* Remove os marcadores de lista */
+
+        li {
+            background-color: var(--primary-color); /* Exemplo de fundo colorido */
+            color: var(--foreground-color); /* Ajuste de cor do texto */
+            padding: 12px 20px; /* Espaçamento interno */
+            border-radius: 0px; /* Bordas arredondadas */
+            font-weight: bold; /* Destaca o texto */
+            text-align: center; /* Centraliza o texto */
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .about-header .about-title {
+        font-size: 2rem;
+    }
+
+    .about-content {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+}

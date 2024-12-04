@@ -1,0 +1,71 @@
+.movie-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    background-color: #1e293b;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        background-color: #111827;
+    }
+
+    &.expanded {
+        grid-column: span 2; /* Ocupa mais espaço quando expandido */
+        grid-row: span 2;
+    }
+
+    .movie-poster img {
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        transition: transform 0.3s;
+    }
+
+    .movie-infos {
+        padding: 12px;
+        color: #f1f5f9;
+        text-align: left;
+
+        .movie-title {
+            font-size: 1rem;
+            font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .movie-description {
+            font-size: 0.875rem;
+            color: #94a3b8;
+            height: 3rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin: 8px 0;
+            transition: height 0.3s ease;
+        }
+
+        .movie-description.expanded {
+            height: auto; /* Permite o texto expandido */
+        }
+
+        .btn-default {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: var(--primary-color, #1e90ff);
+            color: #ffffff;
+            border: none;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-default:hover {
+            background-color: var(--button-hover, #0077e6);
+        }
+    }
+}

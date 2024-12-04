@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+:root {
+    --primary-color: #1e90ff;
+    --secondary-color: #f1f5f9;
+    --background-color: #0f172a;
+    --foreground-color: #ffffff;
+    --button-hover: #0077e6;
+    --button-border: rgba(255, 255, 255, 0.2);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(245.59deg, #020617 35.53%, #030a29 75.52%);
+    color: var(--secondary-color);
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--secondary-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #1e293b;
+}
+
+.navbar a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.navbar a:hover {
+    color: var(--primary-color);
+}
+
+.footer {
+    text-align: center;
+    margin-top: auto;
+    padding: 10px 0;
+    background-color: #1e293b;
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}

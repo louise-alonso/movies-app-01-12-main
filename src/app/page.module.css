@@ -1,0 +1,87 @@
+.containerMain {
+  background: linear-gradient(245.59deg, #020617 35.53%, #030a29 75.52%);
+}
+
+.filmeSection {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.contentSection {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+  color: white;
+}
+
+.filmeText {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.filmeText h1 {
+  font-family: 'Rock Salt', cursive;
+  font-size: 90px;
+  line-height: 1;
+  color: white;
+  margin: 0 0 20px;
+}
+
+.filmeText p {
+  color: white;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 20px;
+}
+
+.filmeImg {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filmeImg img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.ctaa {
+  display: inline-block;
+  color: white;
+  background: #0c0c44;
+  border: 1px solid transparent;
+  padding: 12px 30px;
+  line-height: 1.4;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 30px;
+  text-transform: uppercase;
+  transition: all .55s ease;
+}
+
+.ctaa:hover {
+  background: transparent;
+  border: 1px solid white;
+  transform: translateX(8px);
+}
+
+.ctaa i {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: auto;
+  padding: 10px 0;
+  background-color: #1e293b;
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+}
